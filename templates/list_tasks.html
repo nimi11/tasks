@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tasks</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <h1>Tasks</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task[1] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
